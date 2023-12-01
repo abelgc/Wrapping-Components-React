@@ -10,7 +10,7 @@ function App() {
       <Input id="age" label="Your age" type="number"/>
       <Button>A Button</Button>
       <Button href="www.google.com">A Link</Button>
-      <Container asProp={"p"}/>
+      <Container asProp={"h2"}>common jsx code</Container>
     </main>);
 }
 
