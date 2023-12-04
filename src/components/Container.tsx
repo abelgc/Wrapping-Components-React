@@ -10,10 +10,10 @@ type ContainerProps<C extends ElementType> = { //incomming component identifier
     children: ReactNode;
 }& React.ComponentPropsWithoutRef<C>;
 
-export default function Container<T extends ElementType>({asProp, children}: ContainerProps<T>) {
+export default function Container<T extends ElementType>({asProp, children, ...props}: ContainerProps<T>) {
     const Container = asProp || 'div';
     return (
-        <Container>
+        <Container {...props}>
            {children}
         </Container>
     );
